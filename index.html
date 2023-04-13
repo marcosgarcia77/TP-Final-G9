@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./svg/Love our cats.svg" alt="Love Our Cats">
+    </header>
+        <main>
+            <div class="encabezadoCeleste">
+                <nav>
+                    <a href="./index.html">Home</a>
+                    <a href="./razas.html">Razas</a>
+                    <a href="./sobre.html">Sobre Nosotros</a>
+    
+                </nav>
+            </div>
+        <h1>Completa los datos para saber IMC de tu gato</h1>   
+        <form class="formularioUsuarios">
+            <div class="inputContainer">
+                <label for="nombreMascota"> Nombre de tu Gato</label>
+                <input type="text" id="nombreMascota" placeholder="Canela" required name="nombreMascota">
+            </div>
+            <div class="inputContainer">
+                    <label for="cumpleGato"> Cumpleaños de tu Gato</label>
+                    <input type="date" placeholder="22/04/2022" required id="cumpleGato"  required name="cumpleGato" >
+            </div>    
+            <div class="inputContainer">
+                <label for="sexoMascota"> Sexo de tu Mascota </label>
+                    <select name="sexoMascota" id="sexoMascota"  required>
+                      <option value="gata">Gata</option>
+                      <option value="gato">Gato</option>
+                    </select>
+            </div>
+            <div class="inputContainer">
+                <label for="peso"> Peso en Kilogramos</label>
+                <input type="number" id="peso" placeholder="19"  required>
+            </div>
+            <div class="inputContainer">
+                <label for="cirPanza"> Circunferencia de la Panza (cm)</label>
+                <input type="number" id="cirPanza" placeholder="5"  required>
+            </div>
+            <div class="inputContainer">
+                <label for="largoPata"> Largo de la pata (cm)</label>
+                <input type="number" id="largoPata" placeholder="50"  required>
+            </div>
+            <input type="submit" value = "Calcular IMC" class="btn-calcular">
+            <br>
+             
+        </form>
+        <div id="contenedorMascota" class="contenedorMascota"></div>
+    </main>
+    <footer class="piePagina">
+        <div class="contenedorPie">
+            <div class="contenedor-row">
+                <div class="box">
+                    <h2> Argentina Programa 4.0</h2>
+                   
+                </div>
+              <!--   <div class="box">
+                  
+                </div> -->
+                <div class="box-redes">
+                    <div  class="redes">
+                        <a href=""> <i class="bi bi-facebook"></i></a>
+                        <a href=""> <i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
